@@ -1,0 +1,20 @@
+import { WorkLayout } from '../../components/WorkLayout'
+import Image from 'next/image'
+
+export const meta = {
+  title: '予約システム',
+  image: '/img/reserve.png',
+  year: '2020',
+}
+
+第22回神大フェスタの企画用に開発しました。
+
+高校生向けのオンライン個別相談会の申し込みで、日・学部・時間を選択できるようになっています。その枠の申込者数が定員を満たしたり申し込み可能な時間を過ぎたりすると、その枠は申し込みができなくなります。
+
+申し込みを受け付けると、申込者へのメールとSlackへの通知を行います。
+
+## 使用技術
+
+- PHP
+
+export default ({ children }) => <WorkLayout meta={meta}>{children}</WorkLayout>

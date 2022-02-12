@@ -1,0 +1,20 @@
+import { WorkLayout } from '../../components/WorkLayout'
+import Image from 'next/image'
+import Link from 'next/link'
+
+export const meta = {
+  title: '大学祭団体企画用CMS',
+  image: '/img/cms.png',
+  year: '2021',
+}
+
+第23回神大フェスタで、サイトに掲載する団体企画ページを参加団体が編集できるものです。
+
+誰でも直感的に編集できるよう、NotionのようなWYSIWYGのブロックエディタとなっています。画像や添付ファイルを任意の場所に挿入できるようになっています。
+
+## 使用技術
+
+- Laravel
+- React
+
+export default ({ children }) => <WorkLayout meta={meta}>{children}</WorkLayout>

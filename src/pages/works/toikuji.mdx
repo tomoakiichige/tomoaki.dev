@@ -1,0 +1,21 @@
+import { WorkLayout } from '../../components/WorkLayout'
+import Image from 'next/image'
+
+export const meta = {
+  title: 'Toikuji',
+  image: '/img/toikuji.png',
+  year: '2021',
+}
+
+サークルの新入生歓迎会をオンラインで行うにあたり開発しました。
+
+オンラインでの自己紹介で質問をするのは対面の時よりハードルが高いです。なので、気軽に質問できるよう匿名でいくつでも質問できるようなシステムを開発しました。
+
+投稿した質問は、画面共有をしながらランダムで表示できます。
+
+## 使用技術
+
+- Laravel
+- Vue.js
+
+export default ({ children }) => <WorkLayout meta={meta}>{children}</WorkLayout>
