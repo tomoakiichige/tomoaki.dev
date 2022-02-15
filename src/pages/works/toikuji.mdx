@@ -1,5 +1,5 @@
 import { WorkLayout } from '../../components/WorkLayout'
-import Image from 'next/image'
+import { Image } from '../../components/Image'
 
 export const meta = {
   title: 'Toikuji',
@@ -9,7 +9,7 @@ export const meta = {
 
 サークルの新入生歓迎会をオンラインで行うにあたり開発しました。
 
-オンラインでの自己紹介で質問をするのは対面の時よりハードルが高いです。なので、気軽に質問できるよう匿名でいくつでも質問できるようなシステムを開発しました。
+オンラインでの自己紹介で質問をするのは、対面の時よりハードルが高く感じます。なので、気軽に質問できるよう匿名でいくつでも質問できるシステムを開発しました。
 
 投稿した質問は、画面共有をしながらランダムで表示できます。
 
@@ -17,5 +17,33 @@ export const meta = {
 
 - Laravel
 - Vue.js
+
+## リンク
+
+- [GitHub](https://github.com/tomoakiichige/toikuji)
+
+<Image
+  src="/img/toikuji.png"
+  alt=""
+  width={1440}
+  height={810}
+  caption="【質問投稿画面】セッションによって、ログインをしなくても過去の自分の投稿を削除できるようになっている"
+/>
+
+<Image
+  src="/img/toikuji_2.png"
+  alt=""
+  width={1440}
+  height={810}
+  caption="【抽選画面】Zoom等で画面共有をしながら質問の抽選ができる。「この投稿を次から非表示にする」にチェックを入れると、同じ質問が表示されなくなる。"
+/>
+
+<Image
+  src="/img/toikuji_3.png"
+  alt=""
+  width={1425}
+  height={830}
+  caption="【管理画面】質問投稿画面に表示するタイトルや説明を編集できる。また、質問ごとの表示・非表示の切り替えや質問の削除ができる。"
+/>
 
 export default ({ children }) => <WorkLayout meta={meta}>{children}</WorkLayout>
